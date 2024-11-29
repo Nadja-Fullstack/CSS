@@ -4,12 +4,23 @@ h1 {
     font-family: initial; /* to switch off inheritance */
     border: inherit; /* to switch on the inheritance */
 }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 5px red solid;
     text-align: center;
+    color: green;
+}
 
+p {
+font-family: monospace;
+}
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* Inheritance:
-all inherinant - relating to font; border is not inheriant, i.e. if stated in the "body" will only apply for body of the file not for each element, like h,p, etc. Inheritance can be switch on and off, i.e. if some speficic font-family attached to body, but I need specific font-family for e.g. h1, than I need to switch off the inheritance. To switch off "... (style): initial"; To switch on " ... (style): inherit" */
+all inherinant - relating to font; border is not inheriant, i.e. if stated in the "body" will only apply for body of the file not for each element, like h,p, etc. Inheritance can be switch on and off, i.e. if some speficic font-family attached to body, but I need specific font-family for e.g. h1, than I need to switch off the inheritance. To switch off "... (style): initial"; To switch on " ... (style): inherit" 
+
+All styles related to text  (size, color, alignment, etc.) inherit from "body" or from "father element"; other to be checked; tag "a" does not inherit*/
