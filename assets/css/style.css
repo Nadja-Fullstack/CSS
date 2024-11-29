@@ -1,0 +1,35 @@
+/* Selector type (tag) */ 
+h1 {
+    color: blue; 
+}
+   p {
+    font-size: 20px;
+
+   }
+/* Selector class */ 
+.annotation {
+    font-size: 10px;
+}
+
+/* Selector identificator */
+#subscribe-btn {
+    color: red !important;
+}
+
+/* 
+cebab-case: binding by "-";
+camelCase: each word wih Capital;
+lowerCamelCase: the first letter is small;
+UpperCamelCase (PascalCase): the first letter capital; 
+snake_case: binding by "_" 
+SNAKE_CASE_IN_UPPER_CASE: all letters capital binding with _
+*/ 
+
+/* Cascading:
+if one and the same style applies for the same tag in different styles, i.e. internal and external, that the last one in the hmtl file will prevail */
+
+/* Conflicst:
+Specifity:
+The style with the highest specifity applies; selector types (only tag) has the lowest specifity; selector class (tag class - entry with ".") has a higher specifity, the highest specifity has identificator selector (tag "id" and intro with "#"); the highest specifity has inline class (i.e. "style" in the tag directly)
+The most important is "important", to force the style, not recommended to use, will be written after the style with "!important"
+*/
