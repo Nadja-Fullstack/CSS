@@ -1,26 +1,55 @@
-/* Selector type (tag) */ 
-h1 {
-    color: blue; 
-    font-family: initial; /* to switch off inheritance */
-    border: inherit; /* to switch on the inheritance */
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 5px red solid;
-    text-align: center;
-    color: green;
-}
+/* Block model*/ 
 
 p {
-font-family: monospace;
+    width: 200px;
+    height: 300px; 
+    background-color: blueviolet;
+    /* Block model */ 
+    border: 1px solid red;
+    padding: 20px;
+    margin: 10px; 
+    display: inline; 
+
+ 
+    
+
 }
-a {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Inline and block elements 
+- line elements comes in one line one by one; 
+- block elements take the space of the whole line, each block starts from a new line*/
+
+/* Switching from block to inline */
+
+a{
     color: inherit;
     text-decoration: none;
 }
 
-/* Inheritance:
-all inherinant - relating to font; border is not inheriant, i.e. if stated in the "body" will only apply for body of the file not for each element, like h,p, etc. Inheritance can be switch on and off, i.e. if some speficic font-family attached to body, but I need specific font-family for e.g. h1, than I need to switch off the inheritance. To switch off "... (style): initial"; To switch on " ... (style): inherit" 
+.nav-list-item {
+    display: inline; 
 
-All styles related to text  (size, color, alignment, etc.) inherit from "body" or from "father element"; other to be checked; tag "a" does not inherit*/
+    }
