@@ -1,4 +1,8 @@
 /* Block model*/ 
+body {
+
+    text-align: center;
+}
 
 p {
     width: 200px;
@@ -8,32 +12,28 @@ p {
     border: 1px solid red;
     padding: 20px;
     margin: 10px; 
-    display: inline; 
-
- 
+    display: inline-block;
+       /*  text-align: initial; */
+    vertical-align: middle;
     
-
+    
 }
 
+/* Inline elements: not apply with width and height; all the elements will overlap. To apply block characteristics for inline-elements, to use display: inline-block */ 
+a {
 
+    width: 100px;
+    height: 50px;
+    border: 1px solid green; 
+    padding: 20px;
+    margin: 10px;
+    display: inline-block; 
+   
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* Comments: 
+    - block: take the space of the whole line, to put two elements in one line, to use display: inline-block, that will behave like inline; 
+    - inline: elements follow one by one in the line; width and height do not apply for inline elemts, to change, to use display: inline-block, than the elements will be placed in one line but take caracteristics, such as width and height of the block elements */ 
 
 
 
