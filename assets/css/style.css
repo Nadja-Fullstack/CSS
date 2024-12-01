@@ -1,54 +1,31 @@
-/* Block model */ 
-
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    }
-
-/*
-
-p {
-    width: 200px;
-    height: 300px;
-    border: 5px solid red;
-    padding: 20px;
-    margin: 5px; 
-    text-align: center;
-    display: inline-block;
-    vertical-align: bottom;
-    
-    
-  } */ 
-
-  /* Putting many block along the whole width of the file/page one by one */ 
-
-  .parent1 {
-    font-size: 0;
-    margin: 10px
-    
+    margin: 25px;
+    padding: 0;
 }
 
-  .child1 {
-    border: 5px solid red;
-    display: inline-block;
-    width: calc(100%/2);
-    font-size:16px;
-    margin: 10px
-    padding: 5px
-       
-  }
 
-  .parent2 {
-     font-size: 0;
-     margin: 5px; 
-  }
+img { 
+border: 2px solid green;
+width: 250px;
+height: 210px;
+object-fit:cover;
+object-position:0 0 15em; 
+border-radius: 100%;
+margin: 10px;
+padding: 5px;
+rotate: 270deg;
 
-  .child2 {
-    border: 1px solid red;
+}
+
+p {
+    border: 10px solid yellow;
+    width: 200px;
+    height: auto;
     display: inline-block;
-    width: calc(100%/3);
-    font-size: 46px;
-    padding: 1px;
-  }
+    padding: 5px;
+    margin: 10px;
+    vertical-align:baseline;
+   
+
+}
