@@ -1,55 +1,54 @@
-/* Block model*/ 
-body {
+/* Block model */ 
 
-    text-align: center;
-}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/*
 
 p {
     width: 200px;
-    height: 300px; 
-    background-color: blueviolet;
-    /* Block model */ 
-    border: 1px solid red;
+    height: 300px;
+    border: 5px solid red;
     padding: 20px;
-    margin: 10px; 
+    margin: 5px; 
+    text-align: center;
     display: inline-block;
-       /*  text-align: initial; */
-    vertical-align: middle;
+    vertical-align: bottom;
     
+    
+  } */ 
+
+  /* Putting many block along the whole width of the file/page one by one */ 
+
+  .parent1 {
+    font-size: 0;
+    margin: 10px
     
 }
 
-/* Inline elements: not apply with width and height; all the elements will overlap. To apply block characteristics for inline-elements, to use display: inline-block */ 
-a {
+  .child1 {
+    border: 5px solid red;
+    display: inline-block;
+    width: calc(100%/2);
+    font-size:16px;
+    margin: 10px
+    padding: 5px
+       
+  }
 
-    width: 100px;
-    height: 50px;
-    border: 1px solid green; 
-    padding: 20px;
-    margin: 10px;
-    display: inline-block; 
-   
-    }
+  .parent2 {
+     font-size: 0;
+     margin: 5px; 
+  }
 
-    /* Comments: 
-    - block: take the space of the whole line, to put two elements in one line, to use display: inline-block, that will behave like inline; 
-    - inline: elements follow one by one in the line; width and height do not apply for inline elemts, to change, to use display: inline-block, than the elements will be placed in one line but take caracteristics, such as width and height of the block elements */ 
-
-
-
-
-/* Inline and block elements 
-- line elements comes in one line one by one; 
-- block elements take the space of the whole line, each block starts from a new line*/
-
-/* Switching from block to inline */
-
-a{
-    color: inherit;
-    text-decoration: none;
-}
-
-.nav-list-item {
-    display: inline; 
-
-    }
+  .child2 {
+    border: 1px solid red;
+    display: inline-block;
+    width: calc(100%/3);
+    font-size: 46px;
+    padding: 1px;
+  }
