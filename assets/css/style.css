@@ -1,31 +1,26 @@
 * {
     box-sizing: border-box;
-    margin: 25px;
+    margin: 0;
     padding: 0;
 }
 
 
-img { 
-border: 2px solid green;
-width: 250px;
-height: 210px;
-object-fit:cover;
-object-position:0 0 15em; 
-border-radius: 100%;
-margin: 10px;
-padding: 5px;
-rotate: 270deg;
+header {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./../IMG/Image1.jpg");
+    padding: 50px;
+    text-align: center;
 
 }
 
-p {
-    border: 10px solid yellow;
-    width: 200px;
-    height: auto;
-    display: inline-block;
-    padding: 5px;
-    margin: 10px;
-    vertical-align:baseline;
-   
+h1 {
+text-align: center;
+color: brown;
+display: block-inline;
+padding: 10px;
+margin: 10px;
 
 }
