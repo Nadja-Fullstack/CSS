@@ -1,45 +1,55 @@
-h1,
-h2,
-h3 {
-  /* specificity - 001 */
-  font-size: 100px;
-  background-color: yellow;
+/* Formatting font */ 
+
+@font-face {
+  font-family: Lijeva;
+  src: url('./Fonts/PlaywriteHRLijeva-VariableFont_wght.ttf')
 }
 
-/* selector tag */
+body{
+  font-family: "Yuji Mai", serif;
+}
+
+h1,h2 {
+  font-family: Lijeva;
+  background-color: blueviolet;
+}
+h1 {
+  text-align: center;
+}
+body {
+  font-size: 55px;
+}
 p {
-  /* specificity - 001 */
-  color: rgba(28, 147, 173);
-  /* "a" in rgba = alfa canal, level of transparency, not obligatory only if needed to make the text more transparent */
-  /* color: grey; --word */
-  /* color: rgb (red, green, blue) --rgb */
-  /* color: rgba (red, green, blue, alpha) --rgb + alpha channel (transparency) */
-  /* color: hex-code (16 numbers-system) */
-  font-size: 30px;
-  /* font size can be expressed in pixel (px 1/96 dume), typographic points (pt in mm) -> both absolute values do not depend on any other values; relative measures: em -> depends on the size of other element */
-  line-height: 3em;
-}
-
-/* selector id with specificity 100*/
-#heading {
-  color: red;
-  font-size: 10px;
-}
-
-/* selector class with specificity 010*/
-.green-text {
-  color: green;
-}
-.pink.text {
-  color: pink;
-}
-
-.font-size-large {
-  font-size: 90px;
-}
-.important {
-  font-size: 50px;
+  font-size: 30px;  
+  text-align: left;
+  line-height: 1.5em; /* in relation to the font-size of the parent elements, here font size for p, if no font-size for p given, but given for body, the height will be taken as 2*body fond-size */
   font-weight: bold;
+    
 }
 
-/* inline styles have the highest specificity */
+#btn1 {
+  text-transform: uppercase;
+}
+
+#btn2 {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration:none;
+  color: black;
+}
+/* Text process:
+- font-size
+- color
+- line-height = distance b/w lines
+- text-align = alignment on the page 
+- text-transform = bringing into specific register (upper or lowercase)
+- background-color 
+- text-decoration (incl. 3 parameters): especially for formatting the hyperlinks, like taking away the bottom-line
+- font-weight = to show font bold, light or normal 
+- font - family - to get family font size; also can be sourced from the external sources/providers like google fonts (fonts.google.com) (the font-family needs to be downloaded and pluged in the file)
+- font-face = to add external fonts (i.e. from google font), to introduce font-face use @ -> @font-face
+
+In html file, first to link the internal fonts (if any), than link to css file, otherwise the external fonts will not apply, instead default fonts apply. As the system firstly upload the fonts and only after the styles from style.css. Otherwise, the fonts will be not uploaded. 
+*/
