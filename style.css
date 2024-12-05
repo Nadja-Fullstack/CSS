@@ -1,55 +1,23 @@
-/* Formatting font */ 
+/* Tasks:
+- to make all links lila, bold without subscript;
+- all h1,h2 to make uppercase (text-translorm);
+- all p align in such a way that the text is distributed across the line;
+- increase height of the headings (h1, h2) (line-height) -> to choose the most appropriate; */
 
-@font-face {
-  font-family: Lijeva;
-  src: url('./Fonts/PlaywriteHRLijeva-VariableFont_wght.ttf')
-}
 
-body{
-  font-family: "Yuji Mai", serif;
-}
-
-h1,h2 {
-  font-family: Lijeva;
-  background-color: blueviolet;
-}
-h1 {
-  text-align: center;
-}
-body {
-  font-size: 55px;
-}
-p {
-  font-size: 30px;  
-  text-align: left;
-  line-height: 1.5em; /* in relation to the font-size of the parent elements, here font size for p, if no font-size for p given, but given for body, the height will be taken as 2*body fond-size */
-  font-weight: bold;
-    
-}
-
-#btn1 {
-  text-transform: uppercase;
-}
-
-#btn2 {
-  text-transform: lowercase;
-}
 
 a {
-  text-decoration:none;
-  color: black;
+  color: rosybrown;
+  font-weight: bold;
+  text-decoration: none;
 }
-/* Text process:
-- font-size
-- color
-- line-height = distance b/w lines
-- text-align = alignment on the page 
-- text-transform = bringing into specific register (upper or lowercase)
-- background-color 
-- text-decoration (incl. 3 parameters): especially for formatting the hyperlinks, like taking away the bottom-line
-- font-weight = to show font bold, light or normal 
-- font - family - to get family font size; also can be sourced from the external sources/providers like google fonts (fonts.google.com) (the font-family needs to be downloaded and pluged in the file)
-- font-face = to add external fonts (i.e. from google font), to introduce font-face use @ -> @font-face
 
-In html file, first to link the internal fonts (if any), than link to css file, otherwise the external fonts will not apply, instead default fonts apply. As the system firstly upload the fonts and only after the styles from style.css. Otherwise, the fonts will be not uploaded. 
-*/
+h1, h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 3em;
+} 
+
+p {
+  text-align: justify;
+}
