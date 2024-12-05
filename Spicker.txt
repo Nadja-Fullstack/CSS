@@ -1,4 +1,9 @@
+Styles: internal, inline, external
+
+
 Selectors:
+
+Internal styles: 
 1. ag alement: 
 - used to select all elements of specific types on the page;
 - CSS: e.g. p { for the paragraph}, where p is the name of the tag, the element in the {} will be used for all p on the page;
@@ -10,3 +15,16 @@ Selectors:
 3. class selector: 
  - for group of elements with the same class; 
  - CSS: starting with . + name of class (e.g. my-class) {..-> rule} -> .my-class; example: <p class="my-class">Text</p> - will be used for all elements with the same class
+
+ Note: to use to different classes: class < class1 class2> -> in the <> to use 2 or more classes withouth any comma only backspace 
+
+ Cascading: if two identical features with the same specificity conflict, that those will apply which stands below on the page (i.e. last in the style range)
+
+ Specificity: the selector with the highest specificity will apply -> tag selector has specificity of 001, class selector has specificity of 010, id selector has specificity of 100. Inline-stlyes has the highest specificity 1000.
+
+ Inline styles: 
+ Incorporate directly for the element with "class" followed directly by specifications/features; used mostly in JS, using in CCS worst praxises 
+
+ External styles: to be added in "head" from the external style.css file; linking by the command "link rel..."
+ mail
+

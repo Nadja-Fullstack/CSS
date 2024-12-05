@@ -1,0 +1,45 @@
+h1,
+h2,
+h3 {
+  /* specificity - 001 */
+  font-size: 100px;
+  background-color: yellow;
+}
+
+/* selector tag */
+p {
+  /* specificity - 001 */
+  color: rgba(28, 147, 173);
+  /* "a" in rgba = alfa canal, level of transparency, not obligatory only if needed to make the text more transparent */
+  /* color: grey; --word */
+  /* color: rgb (red, green, blue) --rgb */
+  /* color: rgba (red, green, blue, alpha) --rgb + alpha channel (transparency) */
+  /* color: hex-code (16 numbers-system) */
+  font-size: 30px;
+  /* font size can be expressed in pixel (px 1/96 dume), typographic points (pt in mm) -> both absolute values do not depend on any other values; relative measures: em -> depends on the size of other element */
+  line-height: 3em;
+}
+
+/* selector id with specificity 100*/
+#heading {
+  color: red;
+  font-size: 10px;
+}
+
+/* selector class with specificity 010*/
+.green-text {
+  color: green;
+}
+.pink.text {
+  color: pink;
+}
+
+.font-size-large {
+  font-size: 90px;
+}
+.important {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* inline styles have the highest specificity */
