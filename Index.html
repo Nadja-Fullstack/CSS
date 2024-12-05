@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS</title>
-
     <style>
+
+        /* selector tag */
         p {
             color: rgba(28, 147, 173);
             /* "a" in rgba = alfa canal, level of transparency, not obligatory only if needed to make the text more transparent */
@@ -13,14 +14,37 @@
             /* color: rgb (red, green, blue) --rgb */
             /* color: rgba (red, green, blue, alpha) --rgb + alpha channel (transparency) */
             /* color: hex-code (16 numbers-system) */
-            
+            font-size: 30px;
+            /* font size can be expressed in pixel (px 1/96 dume), typographic points (pt in mm) -> both absolute values do not depend on any other values; relative measures: em -> depends on the size of other element */            
         }
+
+        /* selector id */
+        #heading {
+            color: red;
+            font-size: 50px;
+        }
+         
+        /* selector class */
+        .green-text {
+            color: green
+                }
+                
+        .important {
+            font-size: 50px; 
+            font-weight: bold;
+        }        
     </style>
+   
 </head>
 <body>
     <!-- ctrl + . -> to create comments -->
 
     
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, aspernatur?</p>
+    <p>Lorem ipsum dolor sit, <span class="green-text">amet consectetur adipisicing elit. Aliquid</span>aspernatur</p>
+    <p>Lorem ipsum dolor sit, <span class="important">amet consectetur</span> adipisicing elit. Aliquid, aspernatur?</p>
+
+    <article>
+        <h2 id="heading"> This is my super heading</h2>
+    </article>
 </body>
 </html>

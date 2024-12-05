@@ -1,0 +1,12 @@
+Selectors:
+1. ag alement: 
+- used to select all elements of specific types on the page;
+- CSS: e.g. p { for the paragraph}, where p is the name of the tag, the element in the {} will be used for all p on the page;
+
+2. id:
+- used to select particular element/tag on the page according to its id;
+- CSS: e.g. #identificator (i.e. my-id) {... -> rule / specifications / features}; e.g. <div id="my-id">This could be your text</div>. Styles will be used only for that element with the id selector;
+
+3. class selector: 
+ - for group of elements with the same class; 
+ - CSS: starting with . + name of class (e.g. my-class) {..-> rule} -> .my-class; example: <p class="my-class">Text</p> - will be used for all elements with the same class
