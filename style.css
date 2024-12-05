@@ -1,23 +1,28 @@
-/* Tasks:
-- to make all links lila, bold without subscript;
-- all h1,h2 to make uppercase (text-translorm);
-- all p align in such a way that the text is distributed across the line;
-- increase height of the headings (h1, h2) (line-height) -> to choose the most appropriate; */
+/* Inheritace */ 
 
+.main-article {
+  font-size: 60px;
+  border: 10px solid green;
+  
+}
 
+.article-header {
+  color: red;
+  border: 10px solid green;
+  text-align: center;
+  margin: 10px;
+}
+  
+  article-content {
+  color: blueviolet;
+  
+}
 
-a {
-  color: rosybrown;
-  font-weight: bold;
+.article-link {
   text-decoration: none;
-}
+  }
+  /* the header is larger as by default the header is 1.5em, if font-size in parent 60px, the header will be 90px */
 
-h1, h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  line-height: 3em;
-} 
+/* All fitures related to font color and size will be inherit */
 
-p {
-  text-align: justify;
-}
+/* to include border: weight (in px) line type (i.e. solid) color -> no commas b/w the elements */
