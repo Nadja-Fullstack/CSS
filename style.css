@@ -1,27 +1,23 @@
-/* Inheritace */ 
+/* Block model */
 
-.main-article {
-  font-size: 60px;
-  
+/* Two element types:
+- block: order vertically, take all the space of the line, has specific height and width, which can be changed
+- inline: order one by one in the line, height and width depend on the content
+
+*/ 
+
+div {
+  width: 30px; 
+  height: 50px;
 }
 
-.article-header {
-  color: red;
-  border: 10px solid green;
-  text-align: center;
-  margin: 10px;
+.image {
+width: 400px;
+border: 3px solid red;
+box-sizing: border-box;
+
+/* height: 300px; */
+
 }
-  
-  article-content {
-  color: blueviolet;
-  
-}
-
-.article-link {
-  text-decoration: none;
-  }
-  /* the header is larger as by default the header is 1.5em, if font-size in parent 60px, the header will be 90px */
-
-/* All fitures related to font color and size will be inherit */
-
-/* to include border: weight (in px) line type (i.e. solid) color -> no commas b/w the elements */
+/* width = content + paddings + borders */ 
+/* to calculate the border measures, if I need a specific width of the picture, i.e. 400px, and I do not need to substract the boder size, than box-sizing: border-box */
