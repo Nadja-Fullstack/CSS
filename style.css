@@ -15,8 +15,16 @@ div {
 width: 400px;
 border: 3px solid red;
 box-sizing: border-box;
+padding: 10px 5px 10px 5px;
+margin-left: 60px;
+
 
 /* height: 300px; */
+/* padding: top right botton left 
+padding: top 1 value (for right & left) botton 
+padding: 2 values - 1 for top & bottong & 1 for left & right
+padding: 1 value for all sides 
+padding-top, padding-right, padding-botton, padding-left */
 
 }
 /* width = content + paddings + borders */ 
