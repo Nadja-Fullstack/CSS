@@ -1,0 +1,105 @@
+
+.background { 
+   background-image: url(./Assets/ракушка.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center;
+   height: 45vh;
+   width: 100%
+
+   
+}
+
+.Heading {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #926239;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.Text1 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #926239;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.btn_container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: inherit;
+    border: 1px solid #926239;
+    border-radius: 5px;
+    color: #926239;
+    padding: 3px 3px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #926239;
+    color: white;
+}
+
+.Text2 {
+    background-color: #926239;
+    font-size: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px 5px 10px;
+    margin: 0 auto;
+}
+
+.Text3 {
+    background-color: white;
+    font-size: 10px;
+    color: #926239;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px 5px 10px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+   font-size: 0;
+   
+}
+.block {
+   display: inline-block;
+   width: 33.3333%;
+   font-size: 10px;    
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+   vertical-align: top;
+   
+}
+
+.block1 {
+    background-color: #926239; 
+    color: white;
+    padding: 5px 5px;
+    
+}
+
+.block2 {
+    background-color: white; 
+    color: #926239;
+    padding: 5px 5px;
+}
