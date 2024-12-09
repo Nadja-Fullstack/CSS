@@ -1,26 +1,47 @@
-
-.card-wrapper {
-  border: 1px solid blue;
-  width: 500px;
-  height: 350px;
+div {
+  display: flex;
+  width: 600px; 
+  justify-content: center;
+  padding: 2em;
+  margin: 50px;
+ 
 }
 
 
-img {
+.image {
+  box-sizing: border-box;
+  width: 300px; 
+  border-radius: 300%;
+  border: 1px solid gray;
+  object-fit: cover;
+  
+}
+
+.image1 {
+  box-sizing: border-box;
   width: 300px;
   height: 300px;
-  border: 3px solid gray;
-  border-radius: 200%;
-  object-fit: cover;
-  display: block;
-  margin: 20px auto;
-  
+  border-radius: 300%;
+  border: 1px solid gray;  
 
 }
 
-.img6 {
-  object-position: 0.7px 0.5px;
+.block-coverage {
+  border: 10px dashed red;
+  width: auto;
+  height: 600px;
+  align-items: left;
 }
 
+.empty-box{
+  border: 10px solid gray;
 
-/* margin: 0 auto -> to center the imgate in the box in the middle/centered
+}
+
+.text-container {
+  border: 10px solid blue;
+  width:fit-content;
+  padding: 2em;
+  text-align: center;
+  margin: 10px;
+}
