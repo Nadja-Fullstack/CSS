@@ -1,18 +1,26 @@
 
-.image {
-
-width: 400px;
-border: 3px solid red;
-box-sizing: border-box;
-padding: 10px 5px 10px 5px;
-margin-left: 60px;
-
+.card-wrapper {
+  border: 1px solid blue;
+  width: 500px;
+  height: 350px;
 }
-span {
+
+
+img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid gray;
+  border-radius: 200%;
+  object-fit: cover;
   display: block;
+  margin: 20px auto;
+  
+
 }
 
-div {
-display: inline; 
+.img6 {
+  object-position: 0.7px 0.5px;
 }
 
+
+/* margin: 0 auto -> to center the imgate in the box in the middle/centered
