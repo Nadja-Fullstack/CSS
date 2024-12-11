@@ -11,16 +11,21 @@ div {
     font-size: 36px;
     white-space: pre;
     /* to formal pushing words to new line */
+    text-transform: lowercase;
+    /* direction: rtl;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways; */
 }
 
 h2 {
     border: 2px solid green;
     width: 300px;
-    white-space: nowrap;
+    padding: 15px;
+    white-space: pre-line ;
     overflow: hidden;
     /* to monitor elements reaching outside the given size, i.e. in the box */ 
     text-overflow: ellipsis; 
      /* to show "..." for the text reaching outside the borders, i.e. showing that the text goes on */
      /* to show the whole text, incl the hidden, to add attribute "title", that the whole text will be shown while putting cursor on the word */ 
-     padding: 10px;
+     /* overflow, text-overflow and white-space used often together */
 }
