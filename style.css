@@ -1,31 +1,38 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-weight */
-  /* font-style: normal */
-  line-height: 1.15;
-  letter-spacing: -1px; /*to change spacing b/w letters) */
+/* Combinators: 
+- listing by using "," as separator; 
+- child combinator, e.g. div > p; 
+- descendant combinator: all children, groschildren, etc.: example of combined selector: body > * : i.e. all next generation elements of body; 
 
+*/
+
+/* select all h1 and p elements */
+h1, p {
+    font-style: italic;
+} 
+
+/* select all direct childer of body element */   
+body > * {
+    border: 1px solid green;
 }
 
-div {
-    font-size: 36px;
-    white-space: pre;
-    /* to formal pushing words to new line */
-    text-transform: lowercase;
-    /* direction: rtl;
-    writing-mode: horizontal-tb;
-    text-orientation:sideways; */
+/* select all p element that are direct children of section element */ 
+section > p {
+    font-weight: bold;
 }
 
-h2 {
-    border: 2px solid green;
-    width: 300px;
-    padding: 15px;
-    white-space: pre-line ;
-    overflow: hidden;
-    /* to monitor elements reaching outside the given size, i.e. in the box */ 
-    text-overflow: ellipsis; 
-     /* to show "..." for the text reaching outside the borders, i.e. showing that the text goes on */
-     /* to show the whole text, incl the hidden, to add attribute "title", that the whole text will be shown while putting cursor on the word */ 
-     /* overflow, text-overflow and white-space used often together */
+/* select all descendant elements, i.e. h2 elements inside section element */ 
+
+section h2 {
+    color: blueviolet; 
 }
+
+/* next-sibling combinator, compbaning 1 and the next one but not the previous one */ 
+
+h2 + p {
+    background-color: aquamarine;
+}
+
+/* subsequent-sibling combinator */ 
+ h2+p~p {
+    color: green; 
+ }
