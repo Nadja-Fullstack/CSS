@@ -9,8 +9,8 @@ p {
 
   /* font-size: absolut - px; relative - em (1em = 100% of the font-size of the parent element) - as base for the calculation the parent font-size will be taken; rem - root em -> as base for the calculation the root element will be taken, the ultimate parent -> html*/
 
-  /* vw = viewport width = font-size does not change as the page size change; vw (100vw - 100% of the visible part of the page in the browser */ 
-}
+  /* vw = viewport width = font-size does not change as the page size change; vw (100vw - 100% of the visible pwidth art of the page in the browser 
+  vh = viewport height = 1vh = 1% of the visible height part of the page in the browser */ 
 
 h1 {
   font-size: 3vw;
