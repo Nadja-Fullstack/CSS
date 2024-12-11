@@ -1,33 +1,23 @@
-* {
-  box-sizing: border-box;
-  border: 3px solid red;
-  margin: 0;
+html {
+    font-size: 16px;
 }
-body{
+/* default font-size = 16px, therefore font-size for html (the root element) is not required */
+p {
   text-align: center;
-}
-.class1 {
-  display: inline;
-}
-.class2 {
-  display: block;
-  width: 80px; /* width of the block, i.e. will take the whole line, i.e. no other element will be placed in the same line, but the blow, if with border, will shift to the left of the page, to place the block in the center of the page - use margin: 0 auto */
-  margin: 0 auto; /* often used to place the content in the center of the page */ 
-}
-.class3 {
-  display: inline-block;
-}
-.content_wrapper {
- margin: 0 auto;
- border: 3px solid blue; 
- max-width: 800px;
- width: 100%; 
- min-width: 100px /* to what extend the block can be shorten */
- /* width: to speficify the width of the block element; to cut the space otherwise it takes the whole width of the page; margin: 0 auto - to center the block on the page */
+  font-size: 1em;
+  /* font-family: */
 
+  /* font-size: absolut - px; relative - em (1em = 100% of the font-size of the parent element) - as base for the calculation the parent font-size will be taken; rem - root em -> as base for the calculation the root element will be taken, the ultimate parent -> html*/
+
+  /* vw = viewport width = font-size does not change as the page size change; vw (100vw - 100% of the visible part of the page in the browser */ 
 }
 
+h1 {
+  font-size: 3vw;
+}
 
-/* From body, as a parent alements, inline and inline-block inherit the specifications from the parent; block does not, as block takes the whole line acc. to the content */
+/* Inline element can be putted inside an inline element, a block elements can be putted inside a block element, but a block elements can't be putted into an inline element. div can't be put into span, p cant be put into link/a */
 
-/* Command break - <br. /> to forcefully bring the alement to the next line. Will be not used, as bad praxis */
+article {
+    font-size: 2.25rem 
+}
