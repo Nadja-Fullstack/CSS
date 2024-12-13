@@ -1,38 +1,23 @@
-/* Combinators: 
-- listing by using "," as separator; 
-- child combinator, e.g. div > p; 
-- descendant combinator: all children, groschildren, etc.: example of combined selector: body > * : i.e. all next generation elements of body; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* to reset css default styles, like marging, padding, etc. - an external file can be used to reset all the default styles */ 
 
-*/
-
-/* select all h1 and p elements */
-h1, p {
-    font-style: italic;
-} 
-
-/* select all direct childer of body element */   
-body > * {
-    border: 1px solid green;
+body {
+    font-family: serif;
 }
 
-/* select all p element that are direct children of section element */ 
-section > p {
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+.userCard {
+
 }
 
-/* select all descendant elements, i.e. h2 elements inside section element */ 
-
-section h2 {
-    color: blueviolet; 
+.bg {
+background-image: url(./Assets/Aurora.jpg);
 }
 
-/* next-sibling combinator, compbaning 1 and the next one but not the previous one */ 
-
-h2 + p {
-    background-color: aquamarine;
-}
-
-/* subsequent-sibling combinator */ 
- h2+p~p {
-    color: green; 
- }
