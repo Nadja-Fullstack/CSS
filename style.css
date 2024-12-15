@@ -1,86 +1,52 @@
 * {
     box-sizing: border-box;
 }
-/* to reset css default styles, like marging, padding, etc. - an external file can be used to reset all the default styles */ 
 
-html {
-    --user-pic-width: 150px; 
-}
-
-body {
-    font-family: serif;
-    line-height: 2;
-    text-align: center;
+.outerBlock {
+    border: 5px solid blue;
+    height: 500px; 
 }
 
-a {
-    text-decoration: none;
-    color: inherit; 
-}
-.userCard {
-    max-width: 300px;
-    width: 100%;
-    min-width: 250px;
-    /* to make the card adjusting to the size of the screen */
-    margin: 50px auto; 
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 10px silver;
-    overflow: hidden;
-    /* to hide overlapping */
+.innerBlock {
+border: 5px solid red;
+padding: 20py;
+font-size: 2rem; 
 }
 
-.bg {
-    background-image: url(./Assets/BlueSky.webp);
-    /* the size of the background aligns with the content size, as here only the pensil as the content, the backgroud is small, if no content, the background will be not visible */ 
-    height: 250px;
-    color: navy;
-    /* icones behaves like the text/font, therefor all the styles as for the font aply */
-    padding: 15px;
-    text-align: right;
+.flexParent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: raw;
+    /* to push the elements on the next line */ 
+    justify-content: flex-start;
+    /* main axis, i.e. x */
+    /* space-between: the two elements on the end push to the ends of the page, the elements inside range evently between the end;
+    space-around: equal space between the elements, in the middle double-space,
+    space-evently: equal space between all the elements, also between the middle elements - the same space */
+    align-items: center; 
+    /* to move/aling the elements on the vertial (across-) axis, i.e. y */ 
+    gap: 20px; 
+    /* to allocate space between the alements */
+    flex-flow: row wrap;
+    /* compbination of flex-direction and flex-wrap */ 
+
 }
 
-.contentWrapper {
-    padding 0 1em 1em; 
-}
-.userImg {
-    width: var(--user-pic-width);
-    height: var(--user-pic-width);
-    object-fit: cover;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: calc(-1 * var(--user-pic-width) / 1.5);
-    border: 3px solid navy;
+.flexChild {
 
-/* var = variables (sminni), changing depending on the change of some elements variables depend on, to define in the root (html) with ---var () and than to use in the code with the element (i.e. height, width, etc.) var (name of var defined in the room/html). To use for features which can be changed ofter or if repeat often, to avoid changing, just define the feature, that giv a name if the root (html) and use with var. Ofther used for colors and sizes (width / height) */
 }
 
-.userName {
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 0.2em 0;
+.child3 {
+      /* to push one of the elements from another to the end, i.e. separating from other elements -> to use margin-left: auto */
+  
 }
-.geoLocation, aboutMyself {
-    font-size: 0.7rem;
-    margin: 0.1em 0;
-}
+/* If I move one of the elemetn inside the flex box, i.e. by margin, all the elements will move */ 
 
-.position {
-    font-size: 1rem; 
-    margin: 0.1em 0;
-}
-
-.userSocials {
-    background-color: white;
-    color: navy;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    padding: 10px;
-    width: 30px; 
-    margin: 0 15px; 
-}
-
-.userSocials + .userSocials {
-    margin-left: 30px;
-}
-
-/* to style only the last two userSocials elements -> combinations, whereas the features to only apply for the one elements who has a precendet element * / 
+/* Flex model: 
+- there should be a parent elemnt and child elements inside;
+- to make sure the parent element behaves like parent flex, the command display: flex should be used for the parent element;
+- display: flex impacts the ordering inside the block/the parent -> flex container;
+- the elements inside flex container behaves aroud two axes;
+- the elements take the space of the parent element i.e. flex container;
+- to move emements inside -> to use flex-direction, justify-content;
+*/
