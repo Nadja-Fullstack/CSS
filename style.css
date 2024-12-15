@@ -2,51 +2,46 @@
     box-sizing: border-box;
 }
 
-.outerBlock {
-    border: 5px solid blue;
-    height: 500px; 
-}
+header {
+    background-color: mediumaquamarine;
+    min-height: 100vh;
+    /* to make sure that the content does not overflow the background, to put min-height, instead of just height, that the height will readjust depending on the content of the header */
+    padding: 20px;
+    text-align: center;
 
-.innerBlock {
-border: 5px solid red;
-padding: 20py;
-font-size: 2rem; 
-}
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.flexParent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: raw;
-    /* to push the elements on the next line */ 
-    justify-content: flex-start;
-    /* main axis, i.e. x */
-    /* space-between: the two elements on the end push to the ends of the page, the elements inside range evently between the end;
-    space-around: equal space between the elements, in the middle double-space,
-    space-evently: equal space between all the elements, also between the middle elements - the same space */
-    align-items: center; 
-    /* to move/aling the elements on the vertial (across-) axis, i.e. y */ 
-    gap: 20px; 
-    /* to allocate space between the alements */
-    flex-flow: row wrap;
-    /* compbination of flex-direction and flex-wrap */ 
+    /* justify-content, aling-items -> align the block but not the text inside, to put the text to the center -> text-aling: center */
 
 }
 
-.flexChild {
-
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid green;
+    padding: 10px 20px; 
 }
 
-.child3 {
-      /* to push one of the elements from another to the end, i.e. separating from other elements -> to use margin-left: auto */
-  
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
 }
-/* If I move one of the elemetn inside the flex box, i.e. by margin, all the elements will move */ 
 
-/* Flex model: 
-- there should be a parent elemnt and child elements inside;
-- to make sure the parent element behaves like parent flex, the command display: flex should be used for the parent element;
-- display: flex impacts the ordering inside the block/the parent -> flex container;
-- the elements inside flex container behaves aroud two axes;
-- the elements take the space of the parent element i.e. flex container;
-- to move emements inside -> to use flex-direction, justify-content;
+p {
+    font-size: 1rem;
+    margin-block-end: 1em; 
+}
+/* Comments:
+- height of the backgroud: if 100%, than 100% of the parent element, here body, body's size aligned with the content, here only 3 lines; to allocate the whole height of the page to header, to use value in vh;
+- to switch on flex-box - to use display: flex;
+- flex-direction (columnt, row);
+- justify-content -> to aling on the main axis (horizontally);
+- align-items -> to aling on cross axis;
+- if "a" used as a child element in the flex-box, it changes from inline element to block, so the height and width can be defined;
+
+
+
 */
