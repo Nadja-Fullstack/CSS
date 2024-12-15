@@ -1,47 +1,45 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-header {
-    background-color: mediumaquamarine;
-    min-height: 100vh;
-    /* to make sure that the content does not overflow the background, to put min-height, instead of just height, that the height will readjust depending on the content of the header */
-    padding: 20px;
-    text-align: center;
-
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* justify-content, aling-items -> align the block but not the text inside, to put the text to the center -> text-aling: center */
-
+header,
+div,
+footer {
+  border: 2px solid green;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid green;
-    padding: 10px 20px; 
+body {
+  display: flex;
+  /* turns the body into a flex container */
+  flex-direction: column;
+  /* stack the children elements inside , i.e. header, main, footer, vertically */
+  min-height: 100vh;
+  /* full height of the viewport (i.e. page) */
+  align-items: center;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1em;
+header, footer {
+    width: 100%;
 }
 
-p {
-    font-size: 1rem;
-    margin-block-end: 1em; 
+nav, main {
+    border: 3px solid red;
 }
-/* Comments:
-- height of the backgroud: if 100%, than 100% of the parent element, here body, body's size aligned with the content, here only 3 lines; to allocate the whole height of the page to header, to use value in vh;
-- to switch on flex-box - to use display: flex;
-- flex-direction (columnt, row);
-- justify-content -> to aling on the main axis (horizontally);
-- align-items -> to aling on cross axis;
-- if "a" used as a child element in the flex-box, it changes from inline element to block, so the height and width can be defined;
+div {
+    max-width: 1000px;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    /* to put the children elements, here nav & main, inside one line horizontally, i.e. no one below/upper another, but one by one */
+}
 
-
-
-*/
+nav {
+    width: 25%;
+}
+main {
+    width: 75%;
+}
+footer {
+    margin-top: auto;
+  /* to push footer to the end of the page */
+}
