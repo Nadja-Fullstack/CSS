@@ -1,33 +1,9 @@
-/* Block model -> block-sizing:
-- width = content + paddings + borders -> to use box-sizing: border-box to automatically define the size of the content facing the given paddings & borders
-
-- to change from inline to block and vice versa -> display: inline; display: block */
-
-/* Tables:
-- to create: tag table;
-- header of the table -> caption;
-- the first line of the table - heading of the table -> thead;
-- tr -> to crease a line in the table;
-- th - to crease a line in the heading;
-- td -> to crease cell in the line of the table;
-
-To make a table:
-table>caption (Name of the table)>thead (head of the table)>tr (line of the table)>th (cells in the table)
-                tbody (the body of the table)>tr (the line in the table)>td (the cells in the table) ->tfoot
-- class "colspan" -> to span or to merge the cell for many cells vertically;
-- class rowspan -> to merge the cell vertically;              
-*/
-
-table {
-    border: 2px solid red;
+table, tr, th {
+    border: 3px solid red; 
     border-collapse: collapse;
-    padding: 15px;
-    width: 350px;
-    }
+    width: 600px;
+}
 
 tr, th {
-    border: 2px solid red;
-}    
-.alignment {
-    text-align:start;
+    border: 2px solid red; 
 }
