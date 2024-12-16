@@ -1,21 +1,25 @@
-/* Add pseudo-class:
+/* Navigation bar:
 
-- example: hover;
-- pseudo-class will be added to the selector, i.e. div;
-- writing mode: i.e. with div: div:hover; :active; :focus; :focus.within; :target; :hover, :visited; :focus-visible, 
-- */
+- */ 
 
-div {
-    width: 100px;
-    height: 100px;
-    background-color: bisque;
-    color: red;
-    font-size: 50px;
-    text-align: center;
+/* Combinators -> CSS combinators: child combinator, descendant combinator, namespace separator, next-sibling combinator, selector list, subsquent-sibling...; */
+
+
+.link-list li {
+    /* to sellect all li elements inside the link-list calss - descendant combinator */
+    display: inline-block;
+    /* inline-block: ranges one by one in a line (like inline elements), size will be defined depending on the content (like inline elements), elements will be always square-block (like block alements), heights and width can be applied (like block elements)*/
+    margin-top: 30px;
+    }
+
+.page-link {
+    text-decoration: none;
+    background-color: greenyellow;
+    padding: 10px;
+    color: blue;
 }
 
-div:hover {
-    background-color: darkblue;
-    color: yellow; 
-
+.page-link:hover {
+    background-color: blue;
+    color: red;
 }
