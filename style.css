@@ -1,9 +1,21 @@
-table, tr, th {
-    border: 3px solid red; 
-    border-collapse: collapse;
-    width: 600px;
+/* Add pseudo-class:
+
+- example: hover;
+- pseudo-class will be added to the selector, i.e. div;
+- writing mode: i.e. with div: div:hover; :active; :focus; :focus.within; :target; :hover, :visited; :focus-visible, 
+- */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: red;
+    font-size: 50px;
+    text-align: center;
 }
 
-tr, th {
-    border: 2px solid red; 
+div:hover {
+    background-color: darkblue;
+    color: yellow; 
+
 }
