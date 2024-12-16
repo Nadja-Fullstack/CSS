@@ -28,3 +28,13 @@
     border: 5px solid red;
     
 }
+
+.page-link:active {
+    background-color: white;
+    color: black; 
+}
+input:focus {
+    background-color: yellow;
+}
+
+/* hover: applies if point on the element with the mouse, focus: applies if focusing on the element with the mouse or tab, active: applies if click on the link */
