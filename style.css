@@ -13,21 +13,21 @@
 
 To make a table:
 table>caption (Name of the table)>thead (head of the table)>tr (line of the table)>th (cells in the table)
-                tbody (the body of the table)>tr (the line in the table)>td (the ceels in the table) ->tfoot
+                tbody (the body of the table)>tr (the line in the table)>td (the cells in the table) ->tfoot
 - class "colspan" -> to span or to merge the cell for many cells vertically;
 - class rowspan -> to merge the cell vertically;              
 */
 
-
-table, td, th {
-    border: 2px solid gray;
+table {
+    border: 2px solid red;
     border-collapse: collapse;
-    background-color: azure;;
+    padding: 15px;
+    width: 350px;
+    }
 
-}
-
-td, th {
-border: 1px solid gray; 
-text-align: center;
-
+tr, th {
+    border: 2px solid red;
+}    
+.alignment {
+    text-align:start;
 }
