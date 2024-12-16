@@ -1,45 +1,33 @@
-* {
-  box-sizing: border-box;
+/* Block model -> block-sizing:
+- width = content + paddings + borders -> to use box-sizing: border-box to automatically define the size of the content facing the given paddings & borders
+
+- to change from inline to block and vice versa -> display: inline; display: block */
+
+/* Tables:
+- to create: tag table;
+- header of the table -> caption;
+- the first line of the table - heading of the table -> thead;
+- tr -> to crease a line in the table;
+- th - to crease a line in the heading;
+- td -> to crease cell in the line of the table;
+
+To make a table:
+table>caption (Name of the table)>thead (head of the table)>tr (line of the table)>th (cells in the table)
+                tbody (the body of the table)>tr (the line in the table)>td (the ceels in the table) ->tfoot
+- class "colspan" -> to span or to merge the cell for many cells vertically;
+- class rowspan -> to merge the cell vertically;              
+*/
+
+
+table, td, th {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    background-color: azure;;
+
 }
 
-header,
-div,
-footer {
-  border: 2px solid green;
-}
+td, th {
+border: 1px solid gray; 
+text-align: center;
 
-body {
-  display: flex;
-  /* turns the body into a flex container */
-  flex-direction: column;
-  /* stack the children elements inside , i.e. header, main, footer, vertically */
-  min-height: 100vh;
-  /* full height of the viewport (i.e. page) */
-  align-items: center;
-}
-
-header, footer {
-    width: 100%;
-}
-
-nav, main {
-    border: 3px solid red;
-}
-div {
-    max-width: 1000px;
-    width: 100%;
-    min-width: 320px;
-    display: flex;
-    /* to put the children elements, here nav & main, inside one line horizontally, i.e. no one below/upper another, but one by one */
-}
-
-nav {
-    width: 25%;
-}
-main {
-    width: 75%;
-}
-footer {
-    margin-top: auto;
-  /* to push footer to the end of the page */
 }

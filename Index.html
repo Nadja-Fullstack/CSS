@@ -3,26 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex training - Parent</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Block-model - Table</title>
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>header</header>
-    <div>
-      <nav>nav</nav>
-      <main>main</main>
-    </div>
-   
-
-    <footer>footer</footer>
+    <table
+      <caption>Parking taxes</caption>
+      <thead>
+      <tr>
+        <th>Week day</th>
+        <th>Taxes</th>
+       </tr>
+      </thead>
+      <tbody>
+        <tr>
+                    <td>Monday</td>
+          <td>10$</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>15S</td>
+        </tr>
+        <tr>
+         <td>Wednesday</td>
+          <td>9$</td>
+        </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>10$</td>
+      </tr>
+      <tr>
+       <td>Friday</td>
+        <td>15$</td>
+     </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th  colspan="2">Total:</th>
+          <th colspan="2"># of days: 7</th>
+        </tr>
+      </tfoot>
+    </table>
+ 
   </body>
 </html>
